@@ -22,7 +22,7 @@ Download the necessary raw data from the following sources:
 See the included ‘environment.yml’ file for the module requirements.
 
 ## Step 3: Process the data and calculate the results
-Run the ‘1 – Processing data.py’ file to first process the data. Then, run ‘2 – Model.py’ to calculate the necessary results. Beyond the processing completed in the code, some files are processed via Excel for which the files are already in the corresponding folders ‘2 – processed data’ and ‘3 – results’. The other files are created from the ‘1 – Processing data.py’ file. See these file descriptions for both below:
+The total expected package installation time is ~2 minutes and runtime is ~15 minutes. Run the ‘1 – Processing data.py’ file to first process the data. Then, run ‘2 – Model.py’ to calculate the necessary results. Beyond the processing completed in the code, some files are processed via Excel for which the files are already in the corresponding folders ‘2 – processed data’ and ‘3 – results’. The other files are created from the ‘1 – Processing data.py’ file. See these file descriptions for both below:
 
 | Description                                      | Availability and file name                                                                                     |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
