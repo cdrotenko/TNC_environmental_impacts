@@ -1,8 +1,5 @@
 # TNC environmental impacts
 # Modelling steps and data structure
-<div align="center">
-  <img width="650" height="329" alt="image" src="https://github.com/user-attachments/assets/eabcba56-ae4f-4c3e-b0cc-31701fa5f8f9" />
-</div>
 
 ## Step 1: Download the raw data
 Download the necessary raw data from the following sources:
@@ -13,9 +10,9 @@ Download the necessary raw data from the following sources:
 | Nitrogen application                              | Bruckner et al., 2019           | Can be downloaded here [https://github.com/fineprint-global/fabio](https://github.com/fineprint-global/fabio) |
 | Blue water use                                    | Bruckner et al., 2019           | Can be downloaded here [https://github.com/fineprint-global/fabio](https://github.com/fineprint-global/fabio) |
 | Green water use (2020)                            | Bruckner et al., 2019           | Can be downloaded here [https://github.com/fineprint-global/fabio](https://github.com/fineprint-global/fabio) |
-| Land use (2020)                                   | Baoxiao et al., 2025            | Pre-print can be found here [https://www.researchsquare.com/article/rs-5527595/v1](https://www.researchsquare.com/article/rs-5527595/v1) and is still under review, but data can be used once it is published |
-| Global livestock production in heads/tonnes (2022)| Food and Agriculture Organization| Downloadable from our repository or can be found here [https://www.fao.org/faostat/en/#data](https://www.fao.org/faostat/en/#data). File name: Global production.xlsx |
-| TNC production (2022)                             | Profundo, followed by additional processing from authors | Downloadable from our GitHub repository in the ‘1 – raw data’ folder. File name: TNC production.xlsx |
+| Land use (2020)                                   | Liu et al., 2026                | Downloadable from the publication here [https://www.nature.com/articles/s43016-026-01387-0] |
+| Global livestock processing in heads/tonnes (2022, retrieved June 23, 2025)| Food and Agriculture Organization| Downloadable from our repository or can be found here [https://www.fao.org/faostat/en/#data](https://www.fao.org/faostat/en/#data). File name: Global processing.xlsx |
+| TNC processing (2021-2023)                             | Profundo, followed by additional processing from authors | Downloadable from our GitHub repository in the ‘1 – raw data’ folder. File name: TNC processing.xlsx |
 | Concordance matrix                                | Authors                         | Used to align FABIO countries with GLEAM regions. Downloadable from our GitHub repository in the ‘1 – raw data’ folder. File name: Concordance.xlsx |
 
 ## Step 2: Activate environment
@@ -26,14 +23,16 @@ The total expected package installation time is ~2 minutes and runtime is ~15 mi
 
 | Description                                      | Availability and file name                                                                                     |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| TNC production by weight                         | TNC production converted into weight for beef, poultry, and pork. Downloadable from our repository in the ‘2 – processed data’ folder. File name: TNC production by weight.xlsx |
-| Processed data from FABIO                        | Making the FABIO data ready for our model. Downloadable from our repository in the ‘2 – processed data’ folder. File names: x_ungrouped.csv, Y_ungrouped.csv, Z_ungrouped.csv, F_ungrouped.csv, blue_water.csv, green_water.csv, N_application.csv |
-| TNC environmental impacts                        | The results from our model covering all the environmental impacts across the livestock products. Downloadable from our repository in the ‘3 – results’ folder. File name: Results_all_impacts.xlsx. Please note that some additional processing in additional tabs is conducted in Excel before being used for the figures, which is under the file name Results_visualisations.xlsx under tabs ‘All TNC Impacts’, ‘Bovine Meat’, ‘Poultry Meat’, ‘Pigmeat’ |
-| Global environmental impacts                     | Global environmental impacts per livestock product calculated with FABIO, with the code in part of the 2 – Model.py file. Downloadable from our repository in the ‘3 – results’ folder. File name: Results_visualisations.xlsx under tab ‘Global Impacts’ |
-| Relative global share of TNC production          | Calculations of the TNCs’ production relative to the global production of these livestock products. Downloadable from our repository in the ‘3 – results’ folder. File name: Results_visualisations.xlsx under tab ‘Relative Production’ |
-| Relative global share of TNC impacts             | Calculations of the TNCs’ environmental impacts relative to the global environmental impacts for these livestock products. Downloadable from our repository in the ‘3 – results’ folder. File name: Results_visualisations.xlsx under tab ‘Relative Impacts’. Note: the code for this is in the 3 – Visualisations.py file. |
-| Summary for Figures                              | Summary of the relative production and relative impacts of the TNCs to the world for use in the figures. |
+|FABIO database (formatted data)	|Making the FABIO data ready for our model. Downloadable from our repository in the ‘2 – processed data’ folder. File names: x_ungrouped.csv, Y_ungrouped.csv, Z_ungrouped.csv, F_ungrouped.csv, blue_water.csv, green_water.csv, N_application.csv|
+|TNC processing by weight	|TNC processing amounts converted into weight for beef, poultry, and pork. Downloadable from our repository in the ‘2 – processed data’ folder. File name: TNC processing by weight.xlsx |
+|TNC environmental impacts	|The results from our model covering all the environmental impacts across the livestock products (by company, land type, region, impact amount, animal product, impact type, and unit across the four animal products). Downloadable from our repository in the ‘3 – results’ folder. File name: Results_all_impacts.xlsx (Please note that some additional processing in additional tabs is conducted in Excel before being used for the figures, which is under the file name Results_visualisations.xlsx under tabs ‘All TNC Impacts’, ‘Bovine Meat’, ‘Poultry Meat’, ‘Pigmeat’)|
+|Relative global share of TNC processing|	Calculations of the TNCs’ processing relative to the global production of these livestock products. Downloadable from our repository in the ‘3 – results’ folder. File name: Results_visualisations.xlsx under tab ‘Relative Processing’.|
+|Global environmental impacts|	Global environmental impacts per livestock product calculated with FABIO, with the code in part of the 2 – Model.py file (for total global processing of each product and impact type). Downloadable from our repository in the ‘3 – results’ folder. File name: Results_visualisations.xlsx under tab ‘Global Impacts’|
+|Relative global share of TNC impacts|	Calculations of the TNCs’ environmental impacts relative to the global environmental impacts for these livestock products, with a combined summary file of both the relative processing and relative impacts of the TNCs included under a separate tab. Downloadable from our repository in the ‘3 – results’ folder. File name: Results_visualisations.xlsx under tabs ‘Relative Impacts’ and ‘Summary for Figures’ (Note: the code for this is in the 3 – Visualisations.py file)|
 
 ## Step 4: Create figures
 Run ‘3 – Visualisations.py’. Some minor formatting adjustments such as adding icons are completed using draw.io.
 
+<div align="center">
+  <img width="650" height="329" alt="image" src="https://github.com/user-attachments/assets/e0d59b0c-9e12-4e9a-bb93-7834e1938c93" />
+</div>
